@@ -1,0 +1,17 @@
+{
+  "$type": "ThunderRoad.ContainerData, Assembly-CSharp",
+  "id": "CustomSpellContainer",
+  "version": 1,
+  "displayName": "",
+  "prefabName": "",
+  "description": null,
+  "content": [
+  	{
+      "reference": 0,
+      "itemID": "SpellQuickHeal",
+      "lootTableID": null,
+      "quantity": 1,
+      "customValues": []
+    }
+  ]
+}

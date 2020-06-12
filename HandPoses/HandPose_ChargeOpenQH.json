@@ -1,0 +1,21 @@
+{
+  "$type": "ThunderRoad.HandPoseData, Assembly-CSharp",
+  "id": "ChargeOpenQH",
+  "version": 2,
+  "allowThumbTracking": false,
+  "allowIndexTracking": true,
+  "allowMiddleTracking": true,
+  "allowRingTracking": true,
+  "allowPinkyTracking": true,
+  "indexNoTrigger": false,
+  "poses": [
+    {
+      "umaRaceId": "HumanMale",
+      "prefabPath": "@handposes:HumanMale_ChargeOpen"
+    },
+    {
+      "umaRaceId": "HumanFemale",
+      "prefabPath": "@handposes:HumanFemale_ChargeOpen"
+    }
+  ]
+}

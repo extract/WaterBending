@@ -1,0 +1,17 @@
+{
+  "$type": "ThunderRoad.ItemSpell, Assembly-CSharp",
+  "id": "SpellQuickHeal",
+  "version": 4,
+  "spellId": "QuickHeal",
+  "localizationId": null,
+  "displayName": "QuickHeal",
+  "description": null,
+  "author": "maximus, extract",
+  "price": 0.0,
+  "purchasable": false,
+  "tier": 0,
+  "levelRequired": 0,
+  "isStackable": false,
+  "categoryPath": [],
+  "iconEffectId": "SpellOrbQuickHeal"
+}
