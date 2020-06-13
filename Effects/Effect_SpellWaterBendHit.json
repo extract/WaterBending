@@ -1,0 +1,506 @@
+{
+  "$type": "ThunderRoad.EffectData, Assembly-CSharp",
+  "id": "SpellFireBallHit",
+  "version": 0,
+  "category": "Spell/Fire",
+  "globalVolume": 1.5,
+  "globalMinPitch": 1.0,
+  "globalMaxPitch": 1.0,
+  "modules": [
+    {
+      "$type": "ThunderRoad.EffectModuleParticle, Assembly-CSharp",
+      "effectParticlePath": "@vfx:FireImpact",
+      "intensityCurve": null,
+      "renderInLateUpdate": false,
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "a": 1.0,
+              "r": 0.339622617,
+              "g": 0.0777343959,
+              "b": 0.07208972
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 11.9843159,
+              "g": 2.76078415,
+              "b": 0.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": 0
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "useScaleCurve": false,
+      "scaleCurve": null,
+      "collisionEffectId": null,
+      "collisionLayerMask": {
+        "value": -2097353
+      },
+      "collisionMaxGroundAngle": 45.0,
+      "collisionEmitRate": 0.2,
+      "collisionMinIntensity": 0.0,
+      "collisionMaxIntensity": 1.0,
+      "collisionUseMainGradient": false,
+      "collisionUseSecondaryGradient": false,
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
+      "audioContainerPath": "@audio:SpellFireBallImpact",
+      "loopFadeDelay": 0.0,
+      "audioMixer": 1,
+      "volumeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.6,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": 0,
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 0.6,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "spatialBlend": 1.0,
+      "randomPlay": false,
+      "randomMinTime": 2.0,
+      "randomMaxTime": 5.0,
+      "randomPitch": true,
+      "pitchCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.9,
+            "inTangent": 0.300000072,
+            "outTangent": 0.300000072,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": 0,
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.2,
+            "inTangent": 0.300000072,
+            "outTangent": 0.300000072,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useLowPassFilter": false,
+      "lowPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "lowPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useHighPassFilter": false,
+      "highPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "highPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useReverbFilter": false,
+      "reverbDryLevelCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "minDistance": 1.0,
+      "maxDistance": 500.0,
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleDecal, Assembly-CSharp",
+      "materialPath": "@vfx:FireImpact",
+      "baseLifeTime": 60.0,
+      "emissionLifeTime": 10.0,
+      "fadeRefreshSpeed": 0.1,
+      "priority": 0,
+      "allowItem": false,
+      "allowRagdollPart": true,
+      "size": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "sizeCurve": null,
+      "linkBaseColor": 1,
+      "linkEmissionColor": 2,
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0
+            },
+            "time": 0.0117647061
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 0.0,
+            "time": 0.00294499123
+          },
+          {
+            "alpha": 1.0,
+            "time": 0.758831143
+          }
+        ],
+        "mode": 0
+      },
+      "secondaryGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "a": 1.0,
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "time": 0.0529488064
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 0.873554468,
+              "g": 0.261011839,
+              "b": 0.152459979
+            },
+            "time": 0.311772346
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.84430265,
+              "g": 0.657280564,
+              "b": 0.09656032
+            },
+            "time": 0.582360566
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 4.237095,
+              "g": 1.90780187,
+              "b": 0.820798457
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 0.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 0.490196079,
+            "time": 0.117647059
+          },
+          {
+            "alpha": 0.4862745,
+            "time": 0.391180277
+          },
+          {
+            "alpha": 1.0,
+            "time": 0.9323568
+          }
+        ],
+        "mode": 0
+      },
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModulePaint, Assembly-CSharp",
+      "materialPath": "@vfx:FireImpact",
+      "blendMode": 0,
+      "radius": 0.2,
+      "useRadiusCurve": false,
+      "radiusCurve": null,
+      "depth": 1.0,
+      "opacity": 1.0,
+      "hardness": 1.0,
+      "wrapping": 1.0,
+      "normalFront": 1.0,
+      "normalBack": 0.0,
+      "normalFade": 0.5,
+      "allowItem": false,
+      "allowRagdollPart": true,
+      "linkBaseColor": 1,
+      "linkEmissionColor": 2,
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0
+            },
+            "time": 0.0117647061
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 0.0,
+            "time": 0.00294499123
+          },
+          {
+            "alpha": 1.0,
+            "time": 0.758831143
+          }
+        ],
+        "mode": 0
+      },
+      "secondaryGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "a": 1.0,
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0
+            },
+            "time": 0.0529488064
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 0.873554468,
+              "g": 0.261011839,
+              "b": 0.152459979
+            },
+            "time": 0.311772346
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.84430265,
+              "g": 0.657280564,
+              "b": 0.09656032
+            },
+            "time": 0.582360566
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 4.237095,
+              "g": 1.90780187,
+              "b": 0.820798457
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 0.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 0.490196079,
+            "time": 0.117647059
+          },
+          {
+            "alpha": 0.4862745,
+            "time": 0.391180277
+          },
+          {
+            "alpha": 1.0,
+            "time": 0.9323568
+          }
+        ],
+        "mode": 0
+      },
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    }
+  ]
+}

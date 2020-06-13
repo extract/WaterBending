@@ -1,0 +1,253 @@
+{
+  "$type": "ThunderRoad.EffectData, Assembly-CSharp",
+  "id": "SpellFireBallHitBlade",
+  "version": 0,
+  "category": "Spell/Fire",
+  "globalVolume": 1.7,
+  "globalMinPitch": 0.95,
+  "globalMaxPitch": 1.05,
+  "modules": [
+    {
+      "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
+      "audioContainerPath": "@audio:SpellFireBallImpactBlade",
+      "loopFadeDelay": 0.0,
+      "audioMixer": 1,
+      "volumeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.6,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": 0,
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 0.6,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "spatialBlend": 1.0,
+      "randomPlay": false,
+      "randomMinTime": 2.0,
+      "randomMaxTime": 5.0,
+      "randomPitch": false,
+      "pitchCurve": null,
+      "useLowPassFilter": false,
+      "lowPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "lowPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useHighPassFilter": false,
+      "highPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "highPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useReverbFilter": false,
+      "reverbDryLevelCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "minDistance": 1.0,
+      "maxDistance": 500.0,
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleParticle, Assembly-CSharp",
+      "effectParticlePath": "@vfx:TelekinesisPush",
+      "intensityCurve": null,
+      "renderInLateUpdate": false,
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "a": 1.0,
+              "r": 0.745283,
+              "g": 0.249599516,
+              "b": 0.745283
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "a": 1.0,
+              "r": 1.04417181,
+              "g": 0.394891381,
+              "b": 1.64150941
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": 0
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "useScaleCurve": false,
+      "scaleCurve": null,
+      "collisionEffectId": null,
+      "collisionLayerMask": {
+        "value": -2097353
+      },
+      "collisionMaxGroundAngle": 45.0,
+      "collisionEmitRate": 0.2,
+      "collisionMinIntensity": 0.0,
+      "collisionMaxIntensity": 1.0,
+      "collisionUseMainGradient": false,
+      "collisionUseSecondaryGradient": false,
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    }
+  ]
+}

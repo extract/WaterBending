@@ -1,0 +1,53 @@
+{
+  "$type": "ThunderRoad.SpellCastProjectile, Assembly-CSharp",
+  "id": "WaterBend",
+  "version": 0,
+  "chargeEffectId": "SpellWaterBendCharge",
+  // WaterBend specific
+
+
+
+  // End WaterBend specific
+  "chargeSpeed": 0.5,
+  "stopSpeed": 0.6,
+  "stopIfManaDepleted": false,
+  "grabbedFireMaxCharge": 0.5,
+  "allowThrow": false,
+  "throwMinCharge": 0.9,
+  "allowSpray": false,
+  "sprayHandPoseId": null,
+  "sprayMagicOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "sprayHeadToFireMaxAngle": 45.0,
+  "sprayMinCharge": 0.5,
+  "caption": "WaterBend",
+  "runeString": "W",
+  "imageColor": {
+    "a": 1.0,
+    "r": 0.007,
+    "g": 0.266,
+    "b": 0.3333
+  },
+  "rimColor": {
+    "a": 1.0,
+    "r": 0.007,
+    "g": 0.266,
+    "b": 0.3333
+  },
+  "innerColor": {
+    "a": 1.0,
+    "r": 0.0,
+    "g": 0.266,
+    "b": 0.6333
+  },
+  "audioContainerPath": "",
+  "audioPitch": 1.0,
+  "loopMaxDuration": 5.0,
+  "minMana": 35.0,
+  "manaConsumption": 30.0,
+  "manaWaste": 12.0,
+  "level": 0
+}

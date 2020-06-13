@@ -1,0 +1,193 @@
+{
+  "$type": "ThunderRoad.EffectData, Assembly-CSharp",
+  "id": "SpellFireballLaunch",
+  "version": 0,
+  "category": "Spell/Fire",
+  "globalVolume": 1.5,
+  "globalMinPitch": 1.0,
+  "globalMaxPitch": 1.0,
+  "modules": [
+    {
+      "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
+      "audioContainerPath": "@audio:SpellFireBallLaunch",
+      "loopFadeDelay": 0.0,
+      "audioMixer": 1,
+      "volumeCurve": null,
+      "spatialBlend": 1.0,
+      "randomPlay": false,
+      "randomMinTime": 2.0,
+      "randomMaxTime": 5.0,
+      "randomPitch": true,
+      "pitchCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.9,
+            "inTangent": 0.300000072,
+            "outTangent": 0.300000072,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": 0,
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.2,
+            "inTangent": 0.300000072,
+            "outTangent": 0.300000072,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useLowPassFilter": false,
+      "lowPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "lowPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useHighPassFilter": false,
+      "highPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "highPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "useReverbFilter": false,
+      "reverbDryLevelCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      },
+      "minDistance": 1.0,
+      "maxDistance": 500.0,
+      "step": 0,
+      "stepCustomId": null,
+      "disabled": false
+    }
+  ]
+}
