@@ -1,0 +1,34 @@
+{
+  "$type": "ThunderRoad.MaterialEffectData, Assembly-CSharp",
+  "id": "MagicProjectileWaterBend",
+  "version": 0,
+  "damages": [
+    {
+      "sourceMaterialIds": [
+        "SpellFire"
+      ],
+      "targetMaterialIds": [],
+      "effectBundles": [
+        {
+          "effectId": "SpellWaterBendHit",
+          "ignoredEffects": []
+        }
+      ]
+    },
+    {
+      "sourceMaterialIds": [
+        "SpellFire"
+      ],
+      "targetMaterialIds": [
+        "Blade"
+      ],
+      "effectBundles": [
+        {
+          "effectId": "SpellWaterBendHitBlade",
+          "ignoredEffects": []
+        }
+      ]
+    }
+  ],
+  "penetrations": []
+}

@@ -1,0 +1,105 @@
+{
+  "$type": "ThunderRoad.ItemPhysic, Assembly-CSharp",
+  "id": "WaterBendDynamicProjectile",
+  "version": 4,
+  "prefabName": "DynamicProjectile",
+  "pooledCount": 200,
+  "type": 0,
+  "slot": "",
+  "mass": 1.0,
+  "drag": 0.0,
+  "angularDrag": 0.0,
+  "manaRegenMultiplier": 1.0,
+  "spellChargeSpeedPlayerMultiplier": 1.0,
+  "spellChargeSpeedNPCMultiplier": 1.0,
+  "collisionMaxOverride": 0,
+  "collisionEnterOnly": false,
+  "collisionNoMinVelocityCheck": true,
+  "ignoredCollisionRagdollParts": [],
+  "forceLayer": 0,
+  "audioSnapPath": "",
+  "flyFromThrow": true,
+  "flyRotationSpeed": 5.0,
+  "flyThrowAngle": 30.0,
+  "telekinesisSafeDistance": 1.0,
+  "telekinesisSpinEnabled": false,
+  "telekinesisThrowRatio": 1.0,
+  "damageTransfer": 0,
+  "grippable": true,
+  "customSnaps": [],
+  "modules": [
+    {
+      "$type": "ThunderRoad.ItemModuleAI, Assembly-CSharp",
+      "weaponClass": 3,
+      "weaponHandling": 1,
+      "parryIgnoreRotation": false,
+      "parryRotation": 90.0,
+      "parryDualRotation": 60.0,
+      "armResistanceMultiplier": 1.0,
+      "parryRevertAngleRange": {
+        "x": -80.0,
+        "y": -180.0
+      },
+      "parryDefaultPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "parryDefaultLeftRotation": {
+        "x": 25.0,
+        "y": -10.0,
+        "z": -65.0
+      },
+      "parryDefaultRightRotation": {
+        "x": 30.0,
+        "y": 5.0,
+        "z": 60.0
+      },
+      "allowDynamicHeight": false,
+      "dodgeBehaviour": 3,
+      "defenseHasPriority": false,
+      "attackIgnore": false,
+      "attackForceParryIgnoreRotation": true
+    },
+    {
+      "$type": "ThunderRoad.ItemModuleMagicProjectile, Assembly-CSharp"
+    }
+  ],
+  "colliderGroups": [],
+  "damagers": [
+    {
+      "transformName": "Damager",
+      "damagerID": "Damager_WaterBend"
+    }
+  ],
+  "Interactables": [
+    {
+      "transformName": "Handle",
+      "interactableId": "ObjectHandleTKOnly",
+      "overrideHandPose": false,
+      "handPoseId": ""
+    }
+  ],
+  "effectHinges": [],
+  "whooshs": [
+    {
+      "transformName": "Whoosh",
+      "effectId": null,
+      "trigger": 2,
+      "stopOnSnap": true,
+      "minVelocity": 5.0,
+      "maxVelocity": 20.0
+    }
+  ],
+  "localizationId": "",
+  "displayName": "Magic",
+  "description": "",
+  "author": "",
+  "price": 0.0,
+  "purchasable": false,
+  "tier": 0,
+  "levelRequired": 0,
+  "isStackable": false,
+  "categoryPath": [],
+  "iconEffectId": null
+}

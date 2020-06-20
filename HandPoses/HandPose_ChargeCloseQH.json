@@ -1,0 +1,21 @@
+{
+  "$type": "ThunderRoad.HandPoseData, Assembly-CSharp",
+  "id": "ChargeCloseQH",
+  "version": 2,
+  "allowThumbTracking": false,
+  "allowIndexTracking": true,
+  "allowMiddleTracking": true,
+  "allowRingTracking": true,
+  "allowPinkyTracking": true,
+  "indexNoTrigger": false,
+  "poses": [
+    {
+      "umaRaceId": "HumanMale",
+      "prefabPath": "@handposes:HumanMale_ChargeClose"
+    },
+    {
+      "umaRaceId": "HumanFemale",
+      "prefabPath": "@handposes:HumanFemale_ChargeClose"
+    }
+  ]
+}

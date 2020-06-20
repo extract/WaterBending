@@ -1,5 +1,5 @@
 {
-  "$type": "ThunderRoad.SpellCastProjectile, Assembly-CSharp",
+  "$type": "WaterBendSpell.Spell_WaterBendSpell, WaterBendSpell",
   "id": "WaterBend",
   "version": 0,
   "chargeEffectId": "SpellWaterBendCharge",
@@ -8,14 +8,34 @@
 
 
   // End WaterBend specific
+  "projectileEffectId": "SpellWaterBend",
+  "projectileId": "DynamicProjectile",
+  "projectileDamagerId": "Damager_WaterBend",
+  "projectileImbueEnergyTransfered": 10.0,
+  "projectileVelocity": 1.0,
+  "projectilePlayerGuided": false,
+  "projectileAllowDeflect": true,
+  "projectileDeflectEffectId": "SpellWaterBendHitBlade",
+  "chargeEffectId": "SpellWaterBendCharge",
+  "fingerEffectId": "SpellWaterBendChargeFinger",
+  "closeHandPoseId": "ChargeClose",
+  "openHandPoseId": "ChargeOpen",
   "chargeSpeed": 0.5,
   "stopSpeed": 0.6,
   "stopIfManaDepleted": false,
   "grabbedFireMaxCharge": 0.5,
-  "allowThrow": false,
+  "allowThrow": true,
+  "throwEffectId": "SpellWaterBendLaunch",
   "throwMinCharge": 0.9,
   "allowSpray": false,
   "sprayHandPoseId": null,
+  "sprayMagicOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "sprayHeadToFireMaxAngle": 45.0,
+  "sprayMinCharge": 0.5,
   "sprayMagicOffset": {
     "x": 0.0,
     "y": 0.0,

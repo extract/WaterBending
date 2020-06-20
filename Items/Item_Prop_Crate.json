@@ -1,0 +1,81 @@
+{
+  "$type": "ThunderRoad.ItemPhysic, Assembly-CSharp",
+  "id": "aaa",
+  "version": 4,
+  "prefabName": "@vfx:Sphere",
+  "pooledCount": 0,
+  "type": 4,
+  "slot": "",
+  "mass": 40.0,
+  "drag": 1.0,
+  "angularDrag": 1.0,
+  "manaRegenMultiplier": 1.0,
+  "spellChargeSpeedPlayerMultiplier": 1.0,
+  "spellChargeSpeedNPCMultiplier": 1.0,
+  "collisionMaxOverride": 0,
+  "collisionEnterOnly": true,
+  "collisionNoMinVelocityCheck": false,
+  "ignoredCollisionRagdollParts": [],
+  "forceLayer": 16,
+  "audioSnapPath": "",
+  "flyFromThrow": false,
+  "flyRotationSpeed": 2.0,
+  "flyThrowAngle": 0.0,
+  "telekinesisSafeDistance": 1.0,
+  "telekinesisSpinEnabled": false,
+  "telekinesisThrowRatio": 1.0,
+  "damageTransfer": 0,
+  "grippable": true,
+  "customSnaps": [],
+  "modules": null,
+  "colliderGroups": [
+    {
+      "transformName": "Colliders",
+      "colliderGroupId": "PropDefault"
+    },
+    {
+      "transformName": "CollidersWheels",
+      "colliderGroupId": "PropDefault"
+    }
+  ],
+  "damagers": [
+    {
+      "transformName": "Blunt",
+      "damagerID": "PropBluntHeavy"
+    },
+    {
+      "transformName": "BluntWheels",
+      "damagerID": "PropBluntHeavy"
+    }
+  ],
+  "Interactables": [
+    {
+      "transformName": "Handle",
+      "interactableId": "ObjectHandleTKOnly",
+      "overrideHandPose": false,
+      "handPoseId": ""
+    }
+  ],
+  "effectHinges": [],
+  "whooshs": [
+    {
+      "transformName": "Whoosh",
+      "effectId": "WhooshSwordHeavy",
+      "trigger": 0,
+      "stopOnSnap": true,
+      "minVelocity": 5.0,
+      "maxVelocity": 12.0
+    }
+  ],
+  "localizationId": null,
+  "displayName": "Crate",
+  "description": null,
+  "author": "Unknown",
+  "price": 0.0,
+  "purchasable": false,
+  "tier": 0,
+  "levelRequired": 0,
+  "isStackable": false,
+  "categoryPath": [],
+  "iconEffectId": null
+}

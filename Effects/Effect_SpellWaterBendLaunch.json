@@ -1,8 +1,8 @@
 {
   "$type": "ThunderRoad.EffectData, Assembly-CSharp",
-  "id": "SpellFireballLaunch",
+  "id": "SpellWaterBendLaunch",
   "version": 0,
-  "category": "Spell/Fire",
+  "category": "Spell/Water",
   "globalVolume": 1.5,
   "globalMinPitch": 1.0,
   "globalMaxPitch": 1.0,
