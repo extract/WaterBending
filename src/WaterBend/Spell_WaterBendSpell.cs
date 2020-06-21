@@ -116,7 +116,7 @@ namespace WaterBendSpell
             if (isResurrecting == false)
             {
                 float time = 0;
-                bool continuous = true;
+                bool failedResurrect = false;
                 isResurrecting = true;
                 vfx.GetComponent<VisualEffect>().SetInt("mode", 1);
                 Timing.RunCoroutine(Lerp("thickness", vfx.GetComponent<VisualEffect>().GetFloat("thickness"), defaultVfxThickness / 2f, vfx.GetComponent<VisualEffect>()));
@@ -135,22 +135,23 @@ namespace WaterBendSpell
                         !(Mathf.Abs(creature.ragdoll.hipsPart.transform.position.y - spellCaster.transform.position.y) < 0.6f))
                     {
                         lastHandPose = HandPoseBend.Default;
-                        continuous = false;
+                        failedResurrect = true;
                         PlayerControl.GetHand(spellCaster.bodyHand.side).hapticPlayClipEnabled = false;
+                        Timing.RunCoroutine(CooldownResurrect());
                         break;
                     }
                     yield return Time.fixedDeltaTime;
                 }
-                if (continuous)
+                if (!failedResurrect)
                 {
                     creature.ragdoll.SetState(Creature.State.Alive);
                     creature.ragdoll.SetState(Creature.State.Destabilized);
                     creature.ragdoll.knockoutDuration = 0.1f;
                     creature.health.Resurrect(creature.health.maxHealth, Creature.player);
                     creature.SetFaction(2);
+                    lastHandPose = HandPoseBend.Default;
+                    Timing.RunCoroutine(CooldownResurrect());
                 }
-                lastHandPose = HandPoseBend.Default;
-                Timing.RunCoroutine(CooldownResurrect());
             }
         }
         private IEnumerator<float> CooldownResurrect()
