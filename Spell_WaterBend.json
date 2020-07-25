@@ -1,11 +1,11 @@
 {
-  "$type": "WaterBendSpell.Spell_WaterBendSpell, WaterBendSpell",
+  "$type": "WaterBendSpell.SpellCastWaterBend, WaterBendSpell",
   "id": "WaterBend",
   "version": 0,
   "chargeEffectId": "SpellWaterBendCharge",
   // WaterBend specific
-
-
+  "vfxQuality": "High", // ("High", "Medium", or "Low")
+  "telekinesisOnlyForWaterbend": false, // DOES NOT WORK
 
   // End WaterBend specific
   "projectileEffectId": "SpellWaterBend",

@@ -8,66 +8,6 @@
   "globalMaxPitch": 1.0,
   "modules": [
     {
-      "$type": "ThunderRoad.EffectModuleParticle, Assembly-CSharp",
-      "effectParticlePath": "@vfx:FireImpact",
-      "intensityCurve": null,
-      "renderInLateUpdate": false,
-      "mainGradient": {
-        "colorKeys": [
-          {
-            "color": {
-              "a": 1.0,
-              "r": 0.039622617,
-              "g": 0.0777343959,
-              "b": 0.87208972
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "a": 1.0,
-              "r": 0.9843159,
-              "g": 2.76078415,
-              "b": 11.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": 0
-      },
-      "secondaryGradient": null,
-      "localScale": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0
-      },
-      "useScaleCurve": false,
-      "scaleCurve": null,
-      "collisionEffectId": null,
-      "collisionLayerMask": {
-        "value": -2097353
-      },
-      "collisionMaxGroundAngle": 45.0,
-      "collisionEmitRate": 0.2,
-      "collisionMinIntensity": 0.0,
-      "collisionMaxIntensity": 1.0,
-      "collisionUseMainGradient": false,
-      "collisionUseSecondaryGradient": false,
-      "step": 0,
-      "stepCustomId": null,
-      "disabled": false
-    },
-    {
       "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
       "audioContainerPath": "@audio:SpellFireBallImpact",
       "loopFadeDelay": 0.0,

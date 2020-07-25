@@ -1,15 +1,20 @@
 {
   "$type": "ThunderRoad.ContainerData, Assembly-CSharp",
-  "id": "CustomSpellContainer",
+  "id": "PlayerDefault",
   "version": 1,
+  "exludeFromBuild": false,
   "displayName": "",
-  "prefabName": "",
   "description": null,
   "content": [
-  	{
+  {
       "reference": 0,
-      "itemID": "SpellWaterBend",
-      "lootTableID": null,
+      "referenceID": "SpellWaterBend",
+      "quantity": 1,
+      "customValues": []
+    },
+    {
+      "reference": 0,      
+      "referenceID": "SpellWaterBendMerge",
       "quantity": 1,
       "customValues": []
     }
