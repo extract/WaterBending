@@ -20,9 +20,10 @@ namespace WaterBendSpell
     {
         private ItemData itemData;
         private Quaternion rotDirection;
+        private Gesture[] gesture = new Gesture[Enum.GetValues(typeof(Side)).Length];
         private const float resurrectionCooldownTime = 2f;
         private const float resurrectionTime = 2f;
-
+        
         public string vfxQuality = "High";
         public string propItemId = "WaterBendDynamicProjectile";
         public bool telekinesisOnlyForWaterbend = false;
@@ -58,6 +59,7 @@ namespace WaterBendSpell
         public override void Unload()
         {
             vfx.DeactivateVfx();
+            //gesture = null;
             if (telekinesisOnlyForWaterbend)
                 TelekinesisPlus.TelekinesisPlusModule.local.active = false;
             base.Unload();
@@ -71,15 +73,26 @@ namespace WaterBendSpell
             vfx = new VfxUtils();
             Debug.Log("spellcaster = " + spellCaster + spellCaster.bodyHand.side);
             vfx.InitiateVfx(vfxAsset, spellCaster);
+            if (gesture[(int)spellCaster.bodyHand.side] == null)
+            {
+
+                gesture[(int)spellCaster.bodyHand.side] = new Gesture(spellCaster.bodyHand.side);
+                gesture[(int)spellCaster.bodyHand.side].OnFinishedEvent += SpellCastWaterBend_OnFinishedEvent;
+            }
+
             if (telekinesisOnlyForWaterbend)
                 TelekinesisPlus.TelekinesisPlusModule.local.active = true;
         }
 
-        
+        private void SpellCastWaterBend_OnFinishedEvent(Gesture.GestureSequence gestureSequence)
+        {
+            Debug.Log(gestureSequence.gestureName + ", " + gestureSequence.hand.ToString() + " hand");
+        }
 
         public override void UpdateCaster()
         {
             base.UpdateCaster();
+            gesture[(int)spellCaster.bodyHand.side].GestureUpdate();
 
             if (spellCaster.bodyHand.interactor.grabbedHandle != null)
             {
